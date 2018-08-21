@@ -1,16 +1,16 @@
 node {
   stage('SCM checkout') {
-    git 'https://github.com/Thegaijin/PiggyMetrics.git'
+    git 'clone -b kubernetes https://github.com/Thegaijin/sample-spring-microservices.git'
   }
 
-  stage('compiler, tester, packager') {
+  stage('compile and package') {
     def mvnHome = tool name:'M3', type: 'maven'
     def mvnCMD = "${mvnHome}/bin/mvn"
     sh "${mvnCMD} clean install"
   }
 
   stage('Build docker images') {
-    sh 'docker-compose -f docker-compose.yml build'
+    sh 'docker-compose build'
   }
 
   stage('login to dockerhub') {
