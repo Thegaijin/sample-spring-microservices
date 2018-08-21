@@ -1,6 +1,6 @@
 node {
   stage('SCM checkout') {
-    git 'clone -b kubernetes https://github.com/Thegaijin/sample-spring-microservices.git'
+    git 'https://github.com/Thegaijin/sample-spring-microservices.git'
   }
 
   stage('compile and package') {
