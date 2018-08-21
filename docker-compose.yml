@@ -1,0 +1,27 @@
+version: '2.1'
+services:
+  account-service:
+    build: account-service/.
+    image: thegaijin/account-service
+    restart: always
+    ports:
+      - 2222:2222
+
+  account-mongodb:
+    build: mongodb/.
+    container_name: account-mongodb
+    image: thegaijin/account-mongodb
+    restart: always
+
+  customer-service:
+    build: customer-service/.
+    image: thegaijin/customer-service
+    restart: always
+    ports:
+      - 3333:3333
+
+  customer-mongodb:
+    build: mongodb/.
+    container_name: customer-mongodb
+    image: thegaijin/customer-mongodb
+    restart: always
