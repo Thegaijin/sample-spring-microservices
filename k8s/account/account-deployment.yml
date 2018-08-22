@@ -17,6 +17,6 @@ spec:
           ports:
             - containerPort: 2222
         - name: mongo
-          image: library/mongo
+          image: library/mongo:4.1.1
           ports:
             - containerPort: 27017

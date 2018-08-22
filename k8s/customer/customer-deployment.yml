@@ -18,7 +18,7 @@ spec:
             - containerPort: 3333
               protocol: TCP
         - name: mongo
-          image: library/mongo
+          image: library/mongo:4.1.1
           ports:
             - containerPort: 27017
               protocol: TCP
