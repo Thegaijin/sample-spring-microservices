@@ -1,6 +1,6 @@
 #!/bin/bash
 kubectl apply -R -f ./customer-service
-kubectl apply-R -f ./account-service
+kubectl apply -R -f ./account-service
 kubectl create namespace ingress
 kubectl apply -R -f ./default-backend
 kubectl apply -f ./nginx/nginx-ingress-controller-config-map.yaml -n=ingress
