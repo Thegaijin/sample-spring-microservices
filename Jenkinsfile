@@ -27,6 +27,6 @@ node {
     sh 'chmod +x deploy.sh'
     sh 'ls -la'
     sh 'pwd'
-    sh '. /var/lib/jenkins/workspace/spring-microservices_master-P7BO5UC5GYNIRBMMM4RFHCMEAHITYVPLUPSL2J54G6A6VP3WY3VA/deploy.sh'
+    sh '. deploy.sh'
   }
 }
