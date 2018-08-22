@@ -1,5 +1,4 @@
 #!/bin/bash
-
 kubectl create -R -f ./customer-service
 kubectl create -R -f ./account-service
 kubectl create namespace ingress
