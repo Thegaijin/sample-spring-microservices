@@ -24,6 +24,8 @@ node {
   }
 
   stage('deploy') {
+    sh 'chmod +x deploy.sh'
+    sh 'pwd'
     sh '. deploy.sh'
   }
 }
