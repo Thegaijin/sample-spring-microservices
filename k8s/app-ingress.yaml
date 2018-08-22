@@ -12,7 +12,7 @@ spec:
           - path: /account
             backend:
               serviceName: account-service
-              servicePort: 2222
+              servicePort: 80
           - path: /customer
             backend:
               serviceName: customer-service
