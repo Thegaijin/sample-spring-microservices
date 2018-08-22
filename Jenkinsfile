@@ -24,6 +24,6 @@ node {
   }
 
   stage('deploy') {
-    sh 'kubectl apply -R -f ./k8s'
+    sh '. deploy.sh'
   }
 }
