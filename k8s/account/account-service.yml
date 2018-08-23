@@ -6,11 +6,11 @@ metadata:
     run: account-service
 spec:
   selector:
-    service: account-service
+    app: account-service
   ports:
     - name: port1
-      port: 2222
-      targetPort: 9476
+      port: 30001
+      targetPort: 30002
     - name: port2
       port: 27017
-  type: LoadBalancer
+  type: NodePort
