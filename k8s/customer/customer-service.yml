@@ -7,7 +7,7 @@ spec:
     app: customer-service
   type: NodePort
   ports:
-    - port: 8082
+    - port: 3333
       nodePort: 30011
   # ports:
   #   - name: port1
