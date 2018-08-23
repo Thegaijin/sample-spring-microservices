@@ -5,10 +5,14 @@ metadata:
 spec:
   selector:
     app: customer-service
-  ports:
-    - name: port1
-      port: 30002
-      targetPort: 30002
-    - name: port2
-      port: 27017
   type: NodePort
+  ports:
+    - port: 8082
+      nodeport: 30001
+  # ports:
+  #   - name: port1
+  #     port: 30002
+  #     targetPort: 30002
+  #   - name: port2
+  #     port: 27017
+  # type: NodePort
