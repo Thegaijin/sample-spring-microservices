@@ -10,6 +10,7 @@ spec:
   type: NodePort
   ports:
     - port: 2222
+      targetPort: 2222
       nodePort: 30010
   # ports:
   #   - name: port1
