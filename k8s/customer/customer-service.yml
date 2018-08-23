@@ -10,3 +10,4 @@ spec:
       port: 3333
     - name: port2
       port: 27017
+  type: NodePort
