@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: account-service
+  name: account
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: account-service
+        app: account
     spec:
       containers:
-        - name: account-service
+        - name: account
           image: thegaijin/account-service
           ports:
             - containerPort: 80

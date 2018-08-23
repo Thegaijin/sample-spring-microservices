@@ -4,7 +4,7 @@ metadata:
   name: customer-service
 spec:
   selector:
-    app: customer-service
+    app: customer
   ports:
     - name: port1
       port: 3333

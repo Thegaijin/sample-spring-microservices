@@ -4,7 +4,7 @@ metadata:
   name: account-service
 spec:
   selector:
-    app: account-service
+    app: account
   ports:
     - name: port1
       port: 80
