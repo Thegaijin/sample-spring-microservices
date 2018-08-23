@@ -10,7 +10,7 @@ spec:
   ports:
     - name: port1
       port: 2222
-      targetPort: 9376
+      targetPort: 9476
     - name: port2
       port: 27017
   type: LoadBalancer
