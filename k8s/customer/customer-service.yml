@@ -4,10 +4,9 @@ metadata:
   name: customer-service
 spec:
   selector:
-    app: customer
+    app: customer-service
   ports:
     - name: port1
       port: 3333
     - name: port2
       port: 27017
-  type: NodePort

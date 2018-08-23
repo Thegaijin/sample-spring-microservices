@@ -1,19 +1,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: account
+  name: account-service
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: account
+        app: account-service
     spec:
       containers:
-        - name: account
+        - name: account-service
           image: thegaijin/account-service
           ports:
-            - containerPort: 80
+            - containerPort: 2222
         - name: mongo
           image: library/mongo:4.1.1
           ports:
