@@ -10,7 +10,7 @@ spec:
   type: NodePort
   ports:
     - port: 8081
-      nodePort: 30001
+      nodePort: 30010
   # ports:
   #   - name: port1
   #     port: 30001
